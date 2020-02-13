@@ -1,0 +1,6 @@
+FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+COMPATIBLE_MACHINE .= "|sama5d27-som1-custom"
+UBRANCH = "flea"
+SRC_URI = "git://github.com/k0mpilator/at91bootstrap.git;protocol=https;branch=${UBRANCH}"
+SRCREV = "1ea297f9a0b6694e7be440274510a094fd83d296"
+SRC_URI += "file://at91bootstrap.inc"

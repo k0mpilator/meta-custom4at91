@@ -1,0 +1,5 @@
+SECTION = "kernel"
+SRCREV = "4b75191bcd56d469664608dc9b02799d7f1a3df8"
+SRC_URI = "git://github.com/k0mpilator/linux-at91.git;protocol=git;branch=${KBRANCH}"
+SRC_URI += "file://defconfig"
+COMPATIBLE_MACHINE .= "|sama5d27-som1-custom"
